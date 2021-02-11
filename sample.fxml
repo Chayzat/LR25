@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="450.0" prefWidth="500.0">
+         <children>
+            <TableView fx:id="tbl" prefHeight="353.0" prefWidth="269.0">
+              <columns>
+                <TableColumn fx:id="k" prefWidth="134.6666818857193" text="K(i)" />
+                <TableColumn fx:id="y" prefWidth="133.3333282470703" text="Y(i)" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="94.0" fitWidth="491.0" layoutX="5.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/images/lr25.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="b1" layoutX="297.0" layoutY="27.0" mnemonicParsing="false" onAction="#b1_ch" prefHeight="25.0" prefWidth="178.0" text="Заполнить" />
+            <Button fx:id="b2" layoutX="298.0" layoutY="69.0" mnemonicParsing="false" onAction="#b2_ch" prefHeight="25.0" prefWidth="178.0" text="Выполнить" />
+            <Label layoutX="281.0" layoutY="119.0" text="МОЖЕТ ВВОДИТЬ ТОЛЬКО ЧИСЛА!!!" />
+            <Label layoutX="299.0" layoutY="175.0" text="a =" />
+            <Label layoutX="298.0" layoutY="217.0" text="b =" />
+            <Button fx:id="b3" layoutX="317.0" layoutY="266.0" mnemonicParsing="false" onAction="#b3_ch" text="Очистка" />
+            <Button fx:id="b4" layoutX="383.0" layoutY="266.0" mnemonicParsing="false" onAction="#b4_ch" text="Выход" />
+            <TextArea fx:id="t1" layoutX="338.0" layoutY="165.0" prefHeight="37.0" prefWidth="138.0" />
+            <TextArea fx:id="t2" layoutX="339.0" layoutY="206.0" prefHeight="38.0" prefWidth="138.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
